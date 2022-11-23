@@ -1,1 +1,4 @@
 # Depression-detection-in-speech
+The first model feature extraction step is to create spectrograms for each audio file using the spectrust library. These spectrograms are then fed into a convolution neural network that includes a 2D convolutional layer, average pooling layers, dropout, and a dense layer.
+The second model is the textual sentiment analysis model that extracts the text from the audio using the speech recognition library. The Vader Sentiment analyzer and Spacy are used to find the speech's negativity, sadness, fear, and anger scores.
+Then the participant was classified into two classes, i.e., depressed or not depressed, using machine learning classification models like Logistic Regression, KNN, Random Forest, Decision Tree, and Support Vector Machine (SVM), and were cross-validated to find the best classifier for this purpose.
